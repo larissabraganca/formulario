@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="acessos" href="#">Login</a>
+        <a class="acessos" href="#">Senha</a>
+    </header>
+    <main>
+        <div class="introducao">
+            <h1 class="titulo_principal">Ficha de Avaliação de Enfermagem</h1>
+            <img class="imagem" src="styles/undraw_doctors_hw-removebg-preview.png" alt="imagem decorativa de dois enfermeiros">
+            <h2 class="titulo_principal secundario">Informações do Paciente</h2>
+        </div>
+        <form class="formulario">
+            <div class="divisao">
+                <label class="preencher" for="ncompleto">Nome completo</label><br>
+                <input class="entrada" type="text" id="ncompleto" name="ncompleto"><br>
+            </div>
+            <div class="divisao">
+                <label class="preencher" for="idade">Idade</label><br>
+                <input class="entrada" type="number" id="idade" name="idade" max="2"><br>
+            </div>
+            <div class="divisao">
+                <label class="preencher" for="datansc">Data de nascimento</label><br>
+                <input class="entrada" type="month" id="datanasc" name="datanasc"><br>
+            </div>
+            <div class="divisao">
+                <label class="preencher">Gênero</label>
+                <select class="entrada" id="genero">
+                    <option selected disabled value="">Selecione a opção</option>
+                    <option class="selecao">Feminino</option>
+                    <option class="selecao">Masculino</option>
+                </select>
+            </div>
+            <div class="divisao">
+                <label class="preencher" for="telefone">Telefone</label>
+                <input class="entrada" type="tel" id="telefone" name="telefone" placeholder="(00) 000-00-000"
+                    pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]"><br>
+            </div>
+            <div class="divisao">
+                <label class="preencher" for="e-mail">Email</label>
+                <input class="entrada" type="email" id="e-mail" name="e-mail"><br>
+            </div>
+            <div>
+                <label class="preencher">Endereço</label>
+                <div>
+                    <label class="selecao" for="rua">Rua</label>
+                    <input class="entrada" type="text" id="rua" name="rua"><br>
+                </div>
+                <div>
+                    <label class="selecao" for="complemento">Complemento</label>
+                    <input class="entrada" type="text" id="complemento" name="complemento"><br>
+                </div>
+                <div>
+                    <label class="selecao" for="cidade">Cidade</label>
+                    <input class="entrada" type="text" id="cidade" name="cidade"><br>
+                </div>
+                <div>
+                    <label class="selecao" for="estado">Estado</label>
+                    <input class="entrada" type="text" id="estado" name="estado"><br>
+                </div>
+                <div>
+                    <div class="divisao">
+                        <label class="preencher">Estado civil</label>
+                        <select class="entrada" id="civil">
+                            <option selected disabled value="">Selecione a opção</option>
+                            <option class="selecao">Casado</option>
+                            <option class="selecao">Viuvo</option>
+                            <option class="selecao">Solteiro</option>
+                        </select>
+                    </div>  
+                </div>
+                <div class="divisao">
+                    <label class="preencher" for="profissao">Profissão</label><br>
+                    <input class="entrada" type="text" id="profissao" name="profissao"><br>
+                </div>
+                <div class="divisao">
+                    <label class="preencher" for="educacional">Formação educacional</label><br>
+                    <input class="entrada" type="text" id="educacional" name="educacional"><br>
+                </div>
+            </div>
+        </form>    
+
+    </main>
+    <footer>
+        <button class="botao" type="submit">Próximo</button>
+    </footer>
+</body>
+
+</html>

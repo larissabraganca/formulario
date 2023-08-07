@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --fonte-sans: 'Open Sans', sans-serif;
+    --cor-header: rgb(81, 159, 144);
+    --cor-preto: #080505b6;
+    --cor-preto-claro: #050202;
+    --cor-branco: #fff;
+    --cor-verde-background: #60F211;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: antiquewhite;
+    padding: 0.5em;
+}
+
+.acessos {
+    color: var(--cor-preto);
+    background-color: var(--cor-header);
+    text-decoration: none;
+    font-family: var(--fonte-sans);
+    font-size: 70%;
+    border-radius: 50px;
+    padding: 0.3em;
+}
+
+.introducao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.titulo_principal {
+
+    font-size: 20px;
+    font-family: var(--fonte-sans);
+    color: var(--cor-header);
+    font-weight: 600;
+}
+
+.imagem {
+    width: 30%;
+    height: 30%;
+}
+
+.secundario {
+    font-size: 15px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preencher {
+    color: var(--cor-preto-claro);
+    font-family: var(--fonte-sans);
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-block;
+    width: 80px;
+}
+
+.entrada {
+    display: inline-block;
+    width: 80px;
+    margin: 0.5em;
+}
+
+.divisao {
+    display: flex;
+    align-items: center;
+}
+
+.selecao {
+    color: var(--cor-preto);
+    font-family: var(--fonte-sans);
+    font-size: 8px;
+    font-weight: 400;
+}
+
